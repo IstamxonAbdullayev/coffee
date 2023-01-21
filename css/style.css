@@ -422,9 +422,59 @@ body{
   color: var(--main-text-color-white);
 }
 .senter-btn:hover {
-  background-color: #66d2cf;
+  background-color: #66d2cf; 
 }
-
+.footer-inner {
+  max-width: 327px;
+  margin: 0 auto;
+  padding: 54px 54px;
+  display: flex;
+  flex-direction: column;
+  background-color:  #2C343E;
+}
+.footer-img {
+  max-width: 217px;
+  height: 24px;
+}
+.footer-list {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+}
+.footer-list-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+.footer-list-link {
+  text-decoration: none;
+  font-family: 'Barlow';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.923077px;
+  text-transform: uppercase;
+  color: #83888F;
+}
+.footer-list-link:hover {
+  color: #fff;  
+}
+.icon-list {
+  max-width: 120px;
+  margin-top: 48px;
+  margin-left: 49px;
+  margin-right: 49px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+}
+.icon-list-link:hover svg path {
+  fill: #FDD6BA;
+}
 @media only screen and (min-width: 640px) {
   .logo__img {
     width: 236px;
@@ -609,6 +659,30 @@ body{
     justify-content: flex-start;
     margin-left: 0;
   }
+  .footer-inner {
+    max-width: 688px;
+    padding: 54px 0px;
+  }
+  .footer-img {
+    max-width: 236px;
+    height: 26px;
+    margin: 0 227px;
+  }
+  .footer-list {
+    margin-top: 33px;
+    margin-left: 210px;
+    margin-right: 191px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .footer-list-item:not(:last-child) {
+    margin-right: 32px;
+  }
+  .icon-list {
+    margin-top: 65px;
+    margin-left: 284px;
+    margin-right: 284px;
+  }
 }
 @media only screen and (min-width: 820px) {
   .container {
@@ -732,8 +806,37 @@ body{
     justify-content: flex-start;
     margin-left: 0;
   }
+  .footer-inner {
+    max-width: 1280px;
+    padding: 48px 95px 48px 85px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer-img {
+    margin: 0 0px;
+  }
+  .footer-list {
+    margin-top: 0px;
+    margin-left: 103px;
+    margin-right: 269px;
+    flex-direction: row;
+    align-items: center;
+  }
+  .footer-list-item:not(:last-child) {
+    margin-bottom: 0px;
+  }
+  .icon-list {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    display: flex;
+  }
+  .icon-list-item:not(:last-child) {
+    margin-right: 24px;
+  }
 }
-  
+
 
 
 
