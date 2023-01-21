@@ -492,8 +492,13 @@ body{
   padding: 80px 85px;
   max-width: 600px;
 }
-.works-dark .works-list__title,.works-dark .works-list__text  {
+.works-dark .works-list__title,
+.works-dark .works-list__text  {
   color: #FEFCF7;
+}
+.works-list {
+  margin-left: 0;
+  padding-left: 0;
 }
 .about-hero-title {
   margin: 0;
@@ -884,6 +889,9 @@ body{
     padding: 97px 40px 70px 40px;
     max-width: 768px;
     height: 640px;
+  }
+  .works-dark__item:not(:last-child) {
+    margin-right: 0px;
   }
   .about-hero-text {
     max-width: 398px;
