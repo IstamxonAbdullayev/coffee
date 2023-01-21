@@ -483,6 +483,18 @@ body{
   background-repeat: no-repeat;
   background-position: center;
 }
+.create-heto-inner {
+  background-image: url("../images/creadte-plan-bg.png");
+}
+.works-dark .works-innrt {
+  background-color: #2C343E;
+  margin: 120px 0 120px 0 ;
+  padding: 80px 85px;
+  max-width: 600px;
+}
+.works-dark .works-list__title,.works-dark .works-list__text  {
+  color: #FEFCF7;
+}
 .about-hero-title {
   margin: 0;
   font-family: 'Fraunces 9pt';
@@ -867,6 +879,12 @@ body{
     line-height: 40px;
     text-align: start;
   }
+  .works-dark .works-innrt {
+    margin: 144px 0 144px 0 ;
+    padding: 97px 40px 70px 40px;
+    max-width: 768px;
+    height: 640px;
+  }
   .about-hero-text {
     max-width: 398px;
     padding: 24px 0px 0px 0px;
@@ -1120,6 +1138,12 @@ body{
   .about-hero-title {
     font-size: 40px;
     line-height: 48px;
+  }
+  .works-dark .works-innrt {
+    margin: 168px 0 168px 0 ;
+    padding: 97px 0px 70px 85px;
+    max-width: 1280px;
+    height: 653px;
   }
   .about-hero-text {
     max-width: 445px;
