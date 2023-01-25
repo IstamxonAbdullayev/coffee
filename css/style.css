@@ -702,13 +702,10 @@ body{
   background-color: transparent;
   border: none;
 }
-.dropdown-group {
-  /* width: 730px; */
-}
 .dropdown-group .list {
   list-style: none;
   padding: 0;
-  margin-bottom: 120px;
+  margin-bottom: 110px;
 }
 .dropdown-group .list-item {
   border: none;
@@ -719,10 +716,6 @@ body{
   display: flex;
   flex-direction: column;
   display: none;
-}
-.form {
-}
-.radio-group {
 }
 .card-box {
   margin-top: 16px;
@@ -820,7 +813,6 @@ input:checked + .card-box .box-title{
   animation-iteration-count: 1;
   animation-timing-function: linear;
 }
-
 @keyframes drop {
   0% {
     opacity: 0;
@@ -830,9 +822,6 @@ input:checked + .card-box .box-title{
     opacity: 1;
     transform: translateY(0);
   }
-}
-.banner-img {
-  background-image: url("../images/banner.png");
 }
 @media only screen and (min-width: 640px) {
   .logo__img {
@@ -1156,6 +1145,87 @@ input:checked + .card-box .box-title{
     margin: 21px 0 80px 0;
     text-align: start;
   }
+  .create-me-plan {
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 144px;
+    justify-content: center;
+  }
+  .links {
+    display: none;
+  }
+  .list-img {
+    list-style: none;
+    padding: 0;
+  }
+  .btn-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dropdown-group .list-item {
+    max-width: 710px;
+  }
+  .btn-dropdown {
+    max-width: 586px;
+    height: 48px;
+    margin-right: 165px;
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .dropdown-group .list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 144px;
+  }
+  .dropdown-group .list-item {
+    border: none;
+    opacity: 1;
+    padding: 0px 0 32px 0;
+  }
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+  }
+  .card-box {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 32px 25px 84px 25px;
+    width: 223px;
+    height: 250px;
+  }
+  .card-box:not(:last-child) {
+    margin-right: 10px;
+  }
+  .cards {
+    width: 690px;
+    height: 208px;
+    margin-bottom: 40px;
+    padding: 27px 44px;
+  }
+  .button-group {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .radio-group-show {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  @keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-90px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
 }
 @media only screen and (min-width: 820px) {
   .container {
@@ -1409,6 +1479,93 @@ input:checked + .card-box .box-title{
   .location-list-address {
     margin: 24px 0 0px 0;
     text-align: start;
+  }
+  .create-me-plan {
+    margin: 0 85px;
+    margin-bottom: 168px;
+    justify-content: space-between;
+  }
+  .list-img {
+    list-style: none;
+  }
+  .list {
+    padding: 0;
+  }
+  .list-link {
+    font-family: 'Fraunces 9pt';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 32px;
+    color: #333D4B;
+  }
+  .number {
+    margin-right: 28px;
+    color: #0E8784;
+  }
+  .list-item {
+    padding: 4px 24px 24px 24px;
+  }
+  .list-item:not(:nth-child(1)) {
+    opacity: 0.4;
+  }
+  .list-item:not(:last-child) {
+    border-bottom: 1px solid #83888F;
+  }
+  .links {
+    display: block;
+  }
+  .list-img {
+    list-style: none;
+    padding: 0;
+  }
+  .btn-box {
+    display: flex;
+    justify-content: space-between;
+  }
+  .dropdown-group .list-item {
+    max-width: 900px;
+  }
+  .btn-dropdown {
+    max-width: 730px;
+    height: 48px;
+    margin-right: 80px;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .dropdown-group .list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 168px;
+  }
+  .dropdown-group .list-item {
+    border: none;
+    opacity: 1;
+    padding: 0px 0 32px 0;
+  }
+  .radio-group {
+    display: flex;
+    flex-direction: row;
+  }
+  .card-box {
+    margin-top: 40px;
+    margin-bottom: 100px;
+    padding: 32px 25px 84px 25px;
+    width: 223px;
+    height: 250px;
+  }
+  .card-box:not(:last-child) {
+    margin-right: 10px;
+  }
+  .cards {
+    width: 730px;
+    margin-bottom: 40px;
+    padding: 27px 44px;
+  }
+  .button-group {
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
   }
 }
 
