@@ -702,6 +702,9 @@ body{
   background-color: transparent;
   border: none;
 }
+.btn-dropdown img {
+  transform: rotate(0);
+}
 .dropdown-group .list {
   list-style: none;
   padding: 0;
@@ -807,11 +810,13 @@ input:checked + .card-box .box-title{
 .radio-group-show {
   z-index: 1;
   display: flex;
-  justify-content: space-between;
   animation-name: drop;
   animation-duration: 0.5s;
   animation-iteration-count: 1;
   animation-timing-function: linear;
+}
+.btn-dropdown-img-open {
+  transform: rotate(180deg);
 }
 @keyframes drop {
   0% {
@@ -1183,7 +1188,7 @@ input:checked + .card-box .box-title{
     padding: 0px 0 32px 0;
   }
   .radio-group {
-    display: flex;
+    display: none;
     flex-direction: row;
   }
   .card-box {
@@ -1544,7 +1549,7 @@ input:checked + .card-box .box-title{
     padding: 0px 0 32px 0;
   }
   .radio-group {
-    display: flex;
+    display: none;
     flex-direction: row;
   }
   .card-box {
@@ -1566,6 +1571,25 @@ input:checked + .card-box .box-title{
     margin-top: 0;
     display: flex;
     justify-content: flex-end;
+  }
+  .radio-group-show {
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    animation-name: drop;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+  }
+  @keyframes drop {
+    0% {
+      opacity: 0;
+      transform: translateY(-90px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
 
